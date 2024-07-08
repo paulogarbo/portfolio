@@ -1,12 +1,12 @@
 import { Menu, X } from 'lucide-react'
-import Switcher from '../Switcher/Switcher'
 import * as Dialog from '@radix-ui/react-dialog'
+import Switcher from '../Switcher'
 
 export function Header() {
   const myName = '<Garbo/>'
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto px-4 py-6">
       <div className="flex justify-between items-center">
         <h1 className="font-bold text-3xl text-light-900 dark:text-dark-900">
           {myName}
@@ -14,7 +14,7 @@ export function Header() {
 
         <section className="hidden lg:flex items-center gap-6">
           <nav className="border-r-2 pr-8 border-light-100 dark:border-dark-100">
-            <ul className="flex items-center gap-4 leading-6 font-medium">
+            <ul className="flex items-center gap-5 leading-6 font-medium">
               <li>Sobre</li>
               <li>Tecnologias</li>
               <li>Experiência</li>
@@ -38,9 +38,8 @@ export function Header() {
               </button>
             </Dialog.Trigger>
             <Dialog.Overlay className="fixed inset-0 dark:bg-dark-600 bg-light-600 opacity-20 z-40" />{' '}
-            {/* parei aqui para jogar, volta depois */}
             <Dialog.Content className="fixed top-0 right-0 bottom-0 w-96 lg:w-96 dark:bg-dark-Default bg-light-Default z-50">
-              <div className="flex justify-between items-center border-b-2 border-light-100 dark:border-dark-100 p-4">
+              <div className="flex justify-between items-center border-b-2 border-light-100 dark:border-dark-100 p-4 py-6">
                 <h1 className="font-bold text-2xl text-light-900 dark:text-dark-900">
                   {myName}
                 </h1>
@@ -50,9 +49,9 @@ export function Header() {
                   </button>
                 </Dialog.Close>
               </div>
-              <div className="p-4 text-light-600 dark:text-dark-600 leading font-medium border-b-2 border-light-100 dark:border-dark-100">
+              <div className="p-4 py-6 text-light-600 dark:text-dark-600 leading font-medium border-b-2 border-light-100 dark:border-dark-100">
                 <nav>
-                  <ul className="flex flex-col gap-3">
+                  <ul className="flex flex-col gap-6">
                     <li>Sobre</li>
                     <li>Tecnologias</li>
                     <li>Experiência</li>
@@ -60,8 +59,8 @@ export function Header() {
                   </ul>
                 </nav>
               </div>
-              <div className="flex flex-col gap-4 p-4">
-                <div className="flex justify-between mt-2">
+              <div className="flex flex-col gap-6 px-4 py-6">
+                <div className="flex justify-between px-1">
                   <p>Switch Theme</p>
                   <Switcher />
                 </div>

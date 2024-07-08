@@ -33,6 +33,7 @@ export default {
           900: '#f9fafb',
           950: '#ffffff',
         },
+        'Emerald-500': '#10b981',
       },
     },
   },
