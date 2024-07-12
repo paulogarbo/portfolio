@@ -14,9 +14,9 @@ export function About() {
               src={fotoDePerfil}
               alt="foto de perfil"
               className="
-                  col-start-1 row-start-1 z-10 h-[360px] w-[280px] 
+                  col-start-1 row-start-1 z-10 h-[360px] w-[286px]
                   border-[10px] border-light-50 dark:border-dark-50 md:h-[420px] 
-                  md:w-[340px] lg:h-[480px] lg:w-[400px] "
+                  md:w-[333px] lg:h-[480px] lg:w-[380px] object-cover"
             />
             <div
               className="
